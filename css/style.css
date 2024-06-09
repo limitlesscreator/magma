@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050506;
+  color: white;
+  font-family: sans-serif;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}
+
+header {
+  background-image: url("../img/bgSection1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 778px;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.leftSideNavigation {
+  width: 250px;
+  height: 575px;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  position: relative;
+}
+.menu a:after {
+  content: "";
+  height: 2px;
+  width: 13px;
+  background: #F66B4D;
+  position: absolute;
+  left: -22px;
+  top: 9px;
+}
+
+.social a {
+  margin-right: 30px;
+}
+
+.bookBtn {
+  margin-top: 95%;
+  width: 240px;
+  height: 73px;
+  border: solid 2px #F66B4D;
+  background: rgba(0, 0, 0, 0.64);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.bookBtn2 {
+  width: 240px;
+  height: 73px;
+  border: solid 2px #F66B4D;
+  background: rgba(0, 0, 0, 0.64);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+}
+
+.flexMagma {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightSideMagma {
+  width: 818px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+
+.underMagmaText {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  margin-top: 35px;
+}
+
+.phone {
+  color: white;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.phone img {
+  margin-right: 20px;
+}
+
+.saleSection-2 {
+  height: 673px;
+  position: relative;
+}
+
+.leftTitleSale {
+  font-size: 42px;
+  position: relative;
+}
+
+.saleSectionDisplay {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showAll {
+  color: white;
+  font-size: 14px;
+}
+
+.cardsSale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.saleCard {
+  width: 419px;
+  min-height: 391px;
+  border-radius: 8px;
+  padding-left: 27px;
+  background: #0D0D0F;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 17px;
+}
+
+.cardSymbolSvg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titleCard {
+  width: 240px;
+  font-size: 25px;
+  margin-top: 55px;
+  z-index: 2;
+  position: relative;
+}
+
+.subTitleCard {
+  width: 240px;
+  z-index: 2;
+  position: relative;
+}
+
+.borderForSecondCard {
+  border-bottom: solid 8px #F66B4D;
+}
+
+.saleBg {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: -1;
+}
+
+.section-3 {
+  position: relative;
+  height: 663px;
+}
+
+.textSection3 {
+  width: 582px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: auto;
+  padding-top: 500px;
+  position: relative;
+}
+.textSection3 button {
+  margin-top: 10px;
+}
+
+.section3BgCity {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+  left: -700px;
+}
+
+.smthOrange {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  z-index: -2;
+}
+
+/*# sourceMappingURL=style.css.map */
