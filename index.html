@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Magma</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -30,9 +30,28 @@
 
 <body>
 
-<header>
-  <img class="logo" src="./img/logo.svg" alt="logo">
 
+<header>
+<!--  <img class="logo" src="./img/logo.svg" alt="logo">-->
+  <div class="topHeader">
+    <img class="logoSvgHeader" src="./img/logo.svg" alt="logo">
+    <div class="container">
+      <div class="flexElemsInHeader">
+        <div class="menuHeader">
+          <a href="">меню</a>
+          <a href="">интерьер</a>
+          <a href="">о заведении</a>
+          <a href="">мероприятия</a>
+          <a href="">контакты</a>
+        </div>
+        <div class="numberHeader">
+            <img style="margin-right: 20px" src="./img/phoneOrange.svg" alt="phone">
+
+            +7 495 210 22 52
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="flexMagma">
       <div class="leftSideNavigation">
@@ -174,48 +193,16 @@
     </div>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div style="color: red; font-size: 30px; text-align: center ">
-  Блок с видео
+
+<div class="container">
+<div class="tour3D">
+  <div class="hideTopElemTour"></div>
+<!--  <img class="tour3Dsvg" src="./img/3dTourTop.svg" alt="3dTour">-->
+    <iframe width="100%" height="480" src="https://360space.ru/catalog/mttr-magma-lounge/fullscreen/" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+  </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
 <div class="section-6Meetings">
   <div class="container">
     <h3>Мероприятия</h3>
@@ -331,7 +318,7 @@
         <br>
         <br>
         <br>
-        <button class="bookBtn2">
+        <button class="bookBtn3">
           Забронировать
         </button>
       </div>
@@ -360,6 +347,42 @@
   </div>
 </footer>
 
+
+<div class="modal-1">
+  <div class="modalContactForTwo">
+    <div class="topModal">
+      <div class="oneLine">
+        <h3>Бронирование</h3>
+        <button class="closeBtn">Закрыть</button>
+      </div>
+      <div class="threeInput">
+        <input placeholder="Ваше имя" type="text">
+        <input placeholder="Телефон" type="text">
+        <input placeholder="Ваш email" type="email">
+      </div>
+
+      <div class="twoInput">
+        <input type="date">
+        <input type="time">
+      </div>
+
+      <div class="countGuests">
+        <div class="questText">количество <br>
+          гостей:</div>
+        <div class="btnsModal">
+          <button>1-2</button>
+          <button>2-4</button>
+          <button>4-8</button>
+          <button>>8</button>
+        </div>
+      </div>
+      <button class="sendData">Отправить</button>
+    </div>
+  </div>
+</div>
+
+
+
 <script src="js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -386,9 +409,7 @@
     },
   });
 </script>
-<style>
 
-</style>
 </body>
 
 </html>

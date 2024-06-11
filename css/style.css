@@ -81,9 +81,23 @@ header {
   display: block;
 }
 
+.bookBtn3 {
+  width: 240px;
+  height: 73px;
+  border: solid 2px #F66B4D;
+  background: rgba(0, 0, 0, 0.64);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+}
+
 .flexMagma {
   display: flex;
   justify-content: space-between;
+  margin-top: 90px;
 }
 
 .rightSideMagma {
@@ -271,7 +285,7 @@ h3 {
 
 .leftCaruselOrange {
   position: absolute;
-  top: 160px;
+  top: 193px;
   z-index: -1;
   left: 0;
 }
@@ -309,8 +323,8 @@ h3 {
 
 .specialBorder {
   border-image: url(../img/borderImage.png) 6/2 !important;
-  padding: 20px;
   border-image-repeat: repeat;
+  padding: 20px;
 }
 
 .authorBtn {
@@ -420,6 +434,14 @@ h3 {
   z-index: 2;
 }
 
+.titleInsideCardNewsPage {
+  color: white;
+  font-size: 32px;
+  margin-top: 200px;
+  position: relative;
+  z-index: 2;
+}
+
 .mySwiper2 {
   margin-top: 0 !important;
 }
@@ -506,6 +528,283 @@ footer {
 
 .copyright {
   margin-top: 20px;
+}
+
+.topHeader {
+  position: relative;
+  height: 70px;
+  background: #121214;
+  z-index: 2;
+}
+
+.flexElemsInHeader {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+}
+
+.logoSvgHeader {
+  width: 65%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.menuHeader a {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.numberHeader {
+  display: flex;
+  align-items: center;
+}
+.numberHeader img {
+  margin-right: 20px;
+}
+
+.tour3D {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hideTopElemTour {
+  height: 42px;
+  background: #050506 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.tour3Dsvg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 21;
+}
+
+.modal-1 {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.62);
+  z-index: -10;
+  opacity: 0;
+}
+
+.modalContactForTwo {
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 657px;
+  height: 657px;
+  background: #0A0A0D;
+  border-image: url(../img/borderImageNew.png) 10/2 !important;
+  border-image-repeat: repeat;
+  padding: 20px;
+  border: 5px solid transparent;
+  z-index: -10;
+  opacity: 0;
+}
+
+.closeBtn {
+  color: #55555C;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #16161A;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+.oneLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.threeInput {
+  margin-top: 40px;
+}
+.threeInput input {
+  width: 100%;
+  display: block;
+  background: none;
+  height: 63px;
+  border: solid 1px #161619;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.twoInput {
+  display: flex;
+  justify-content: space-between;
+}
+.twoInput input {
+  width: 48%;
+  height: 63px;
+  display: block;
+  color: white;
+  padding: 0 20px;
+  background: #1A1A1E;
+  border: dashed 1px #26262C;
+  border-radius: 8px;
+}
+
+.countGuests {
+  margin-top: 20px;
+  padding: 0 20px;
+  border: solid #161619 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+}
+
+.questText {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.btnsModal button {
+  cursor: pointer;
+  height: 47px;
+  width: 92px;
+  color: white;
+  background: #1A1A1E;
+  border: none;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+.btnsModal button:hover {
+  transition: 0.5s;
+  color: white;
+  background: #F66B4D;
+}
+
+.sendData {
+  width: 100%;
+  border-radius: 8px;
+  height: 73px;
+  border: solid 1px #F66B4D;
+  background: none;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-size: 56px;
+  font-family: "Victor Mono", monospace;
+  font-weight: normal;
+}
+
+.h2ToBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.firstTopPart {
+  justify-content: space-between;
+  margin-top: 100px;
+  display: flex;
+  height: 400px;
+}
+
+.text-new {
+  line-height: 157%;
+  margin-top: 60px;
+  white-space: break-spaces;
+}
+
+.bigSpace {
+  margin-bottom: 90px;
+}
+
+.underTitleText {
+  font-size: 14px;
+  position: relative;
+  margin-top: 20px;
+  line-height: 130%;
+}
+
+.newsInfo {
+  padding-bottom: 120px;
+}
+
+.btnsModal button.selected {
+  background-color: #F66B4D;
+}
+
+.triggerModal {
+  text-transform: uppercase;
+  background: #101013;
+  border: none;
+  color: white;
+  width: 176px;
+  height: 49px;
+  border-radius: 8px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.startScreenMeets {
+  height: 471px;
+  width: 100%;
+  background-image: url("../img/mainScreenImgMeets.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+.underMeetsElem {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.smallT {
+  font-size: 18px;
+  color: #9B9B9B;
+}
+
+.meetsDescription {
+  margin-top: 100px;
+  display: flex;
+}
+
+.bigT {
+  font-size: 36px;
+}
+
+.oneBlock {
+  margin-right: 85px;
 }
 
 /*# sourceMappingURL=style.css.map */
