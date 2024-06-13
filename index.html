@@ -2,6 +2,7 @@
 <html class="no-js" lang="ru">
 
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Magma</title>
@@ -31,6 +32,35 @@
 <body>
 
 
+<div class="mobileHeader">
+  <nav class="navbar navbar-expand-lg bg-black text-light">
+    <div class="container-fluid " >
+      <a class="navbar-brand" href="/">
+        <img width="100px" src="./img/magmaLogo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div  class="collapse navbar-collapse text-white" id="navbarNav">
+        <ul  class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active  text-light" aria-current="page" href="#">меню</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">интерьер</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">о заведении</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-disabled="true">контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
 <header>
 <!--  <img class="logo" src="./img/logo.svg" alt="logo">-->
   <div class="topHeader">
@@ -41,7 +71,7 @@
           <a href="">меню</a>
           <a href="">интерьер</a>
           <a href="">о заведении</a>
-          <a href="">мероприятия</a>
+          <a href="/meets.html">мероприятия</a>
           <a href="">контакты</a>
         </div>
         <div class="numberHeader">
@@ -54,23 +84,6 @@
   </div>
   <div class="container">
     <div class="flexMagma">
-      <div class="leftSideNavigation">
-        <div class="menu">
-          <a href="">меню</a>
-          <a href="">интерьер</a>
-          <a href="">о заведении</a>
-          <a href="">мероприятия</a>
-          <a href="">контакты</a>
-        </div>
-        <div class="social">
-          <a href=""> <img src="./img/vk.svg" alt="vk"></a>
-          <a href=""><img src="./img/telegram.svg" alt="telegram"></a>
-
-        </div>
-        <button class="bookBtn">
-          Забронировать
-        </button>
-      </div>
       <div class="rightSideMagma">
         <div>
           <img src="./img/magmaLogo.svg" alt="magma">
@@ -78,6 +91,9 @@
             Lorem ipsum dolor sit amet consectetur. Fermentum commodo mattis turpis fringilla mauris
           </div>
         </div>
+        <button class="bookBtn">
+          Забронировать
+        </button>
         <div class="phone">
           <img src="./img/phone.svg" alt="phone"> +7 495 210 22 52
         </div>
@@ -315,15 +331,15 @@
           <a href=""><img src="./img/vk.svg" alt=""></a>
           <a href=""><img src="./img/telegram.svg" alt=""></a>
         </div>
+        <br class="deleteBrOnMobile">
         <br>
-        <br>
-        <br>
+        <br class="deleteBrOnMobile">
         <button class="bookBtn3">
           Забронировать
         </button>
       </div>
       <div>
-        <img style="width: 100%" src="./img/map.png" alt="map">
+        <img style="width: 100%" src="./img/map.png" class="mapMobile" alt="map">
       </div>
     </div>
   </div>
@@ -331,7 +347,7 @@
 
 <footer>
   <div class="container">
-    <div>
+    <div class="turnOffOnMobile">
       <img src="./img/logoFooter.svg" alt="">
       <div class="copyright">
         © 2024 magma.bar
@@ -341,8 +357,14 @@
       <a href="">меню</a>
       <a href="">интерьер</a>
       <a href="">о заведении</a>
-      <a href="">мероприятия</a>
+      <a href="/meets.html">мероприятия</a>
       <a href="">контакты</a>
+    </div>
+    <div class="showOnMobile">
+      <div><img src="./img/logoFooter.svg" alt=""></div>
+      <div class="copyright">
+        © 2024 magma.bar
+      </div>
     </div>
   </div>
 </footer>
@@ -352,7 +374,7 @@
   <div class="modalContactForTwo">
     <div class="topModal">
       <div class="oneLine">
-        <h3>Бронирование</h3>
+        <h3 class="specialClassBronMobile">Бронирование</h3>
         <button class="closeBtn">Закрыть</button>
       </div>
       <div class="threeInput">
@@ -381,20 +403,47 @@
   </div>
 </div>
 
+<div class="modal-2">
+  <div class="modalContactSecond">
+      <div class="oneLine">
+        <h3 style="color: #0A0A0D">Название акции <br>
+          в две строки</h3>
+        <br>
+        <button class="closeBtnModal2">Закрыть</button>
+      </div>
+    <div class="saleInformation">
+      Lorem ipsum dolor sit amet consectetur. Elit scelerisque quam nunc mauris vitae amet nibh duis. Tortor et quis egestas massa lectus ultricies id massa. Faucibus vel amet pretium lectus. Interdum mattis maecenas id velit sed eu elit enim. Sagittis amet sagittis in fames. Eget lobortis quis est proin. Mauris massa vel sit cursus et et integer elementum sociis.
+
+    </div>
+
+  </div>
+</div>
 
 
 <script src="js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  if (window.screen.width < 760){
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-  });
+    });
+  } else {
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+  }
+
 
 
   var swiper2 = new Swiper(".mySwiper2", {
@@ -409,7 +458,13 @@
     },
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<style>
+  .navbar-toggler-icon{
+    filter: invert(100%) sepia(0%) saturate(1904%) hue-rotate(226deg) brightness(114%) contrast(101%) !important;;
+  }
+</style>
 </body>
 
 </html>
